@@ -1,0 +1,38 @@
+cat /etc/*-release 
+
+example:
+[root@ip-172-31-17-97 ~]# cat /etc/*-release
+NAME="Amazon Linux AMI"
+VERSION="2015.03"
+ID="amzn"
+ID_LIKE="rhel fedora"
+VERSION_ID="2015.03"
+PRETTY_NAME="Amazon Linux AMI 2015.03"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:/o:amazon:linux:2015.03:ga"
+HOME_URL="http://aws.amazon.com/amazon-linux-ami/"
+Amazon Linux AMI release 2015.03
+
+
+Debian distro only
+==================
+lsb_release -a 
+
+
+cat /proc/version
+
+[root@ip-172-31-17-97 ~]# cat /proc/version
+Linux version 3.14.48-33.39.amzn1.x86_64 (mockbuild@gobi-build-60007) (gcc version 4.8.2 20140120 (Red Hat 4.8.2-16) (GCC) ) #1 SMP Tue Jul 14 23:43:07 UTC 2015
+[root@ip-172-31-17-97 ~]# 
+
+Linux kernel version?
+=====================
+uname -a
+
+[root@ip-172-31-17-97 ~]# uname -a
+Linux alphine 3.14.48-33.39.amzn1.x86_64 #1 SMP Tue Jul 14 23:43:07 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+
+uname -mrs
+
+[root@ip-172-31-17-97 ~]# uname -mrs
+Linux 3.14.48-33.39.amzn1.x86_64 x86_64
